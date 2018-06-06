@@ -157,14 +157,6 @@ public final class Main extends ClassVisitor {
                                      Collection<String> deps) throws IOException {
         boolean found = true;
         Collection<String> jars = new ArrayList<>();
-        String[] bootClassPathJars = System.getProperty("sun.boot.class.path").split(":");
-        // Do we need "jem -r" here?
-        for (String jar : bootClassPathJars) {
-            File jarFile = new File(jar);
-            if (jarFile.exists()) {
-                jars.add(jar);
-            }
-        }
         pkgs.forEach((String pkg) -> {
             jars.addAll(getPackageJars(pkg));
         });
