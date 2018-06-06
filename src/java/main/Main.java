@@ -61,7 +61,7 @@ public final class Main extends ClassVisitor {
      * Empty Constructor, sets ASM op code version
      */
     public Main() {
-        super(Opcodes.ASM5);
+        super(Opcodes.ASM6);
     }
 
     /**
