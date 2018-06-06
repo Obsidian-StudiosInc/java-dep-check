@@ -175,6 +175,7 @@ public final class Main extends ClassVisitor {
                 Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
+/*
         for (String dep : deps) {
             if (!jarClasses.contains(dep)) {
                 if (found) {
@@ -184,6 +185,7 @@ public final class Main extends ClassVisitor {
                 found = false;
             }
         }
+*/
         return found;
     }
 
