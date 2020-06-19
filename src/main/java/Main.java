@@ -54,9 +54,9 @@ import org.objectweb.asm.Type;
 public final class Main extends ClassVisitor {
 
     private static final int OPCODES = Opcodes.ASM8;
+    private final Set<String> mDeps = new HashSet<>();
+    private final Set<String> mCurrent = new HashSet<>();
     static private String image = "";
-    private Set<String> mDeps = new HashSet<>();
-    private Set<String> mCurrent = new HashSet<>();
 
     /**
      * Empty Constructor, sets ASM op code version
