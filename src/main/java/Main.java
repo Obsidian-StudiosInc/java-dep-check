@@ -53,6 +53,7 @@ import org.objectweb.asm.Type;
  */
 public final class Main extends ClassVisitor {
 
+    private static final int OPCODES = Opcodes.ASM8;
     static private String image = "";
     private Set<String> mDeps = new HashSet<>();
     private Set<String> mCurrent = new HashSet<>();
@@ -61,7 +62,7 @@ public final class Main extends ClassVisitor {
      * Empty Constructor, sets ASM op code version
      */
     public Main() {
-        super(Opcodes.ASM6);
+        super(OPCODES);
     }
 
     /**
@@ -372,7 +373,7 @@ public final class Main extends ClassVisitor {
             }
         }
         addDep(Type.getReturnType(desc));
-        return new MethodVisitor(Opcodes.ASM5) {
+        return new MethodVisitor(OPCODES) {
             @Override
             public void visitLocalVariable(String name,
                                            String desc,
