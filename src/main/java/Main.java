@@ -28,10 +28,10 @@ import java.util.Properties;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import org.apache.commons.cli.PosixParser;
 
 import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.ClassReader;
@@ -268,7 +268,7 @@ public final class Main extends ClassVisitor {
     public static void main(String[] args) throws IOException {
         int exit = 0;
         try {
-            CommandLineParser parser = new PosixParser();
+            CommandLineParser parser = new DefaultParser();
             Options options = new Options();
             options.addOption("h", "help", false, "print help");
             options.addOption("i", "image", true, "image directory");
