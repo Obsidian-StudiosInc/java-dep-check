@@ -1,7 +1,7 @@
 /**
  * This file is part of java-dep-check
  *
- * Copyright (C) 2016-2018 Obsidian-Studios, Inc.
+ * Copyright (C) 2016-2020 Obsidian-Studios, Inc.
  * Copyright (C) 2007,2008 Petteri Räty <betelgeuse@gentoo.org>
  *
  * Distributed under the terms of The GNU Public License v3.0 (GPLv3)
@@ -45,7 +45,7 @@ import org.objectweb.asm.Type;
 /**
  * Main Class of java-dep-check
  * Gentoo/Funtoo Java Utility to scan class files for unneeded dependencies and
- * ophaned class files
+ * orphaned class files
  *
  * @author William L. Thomson Jr., <wlt@o-sinc.com>
  * @author Serkan Kaba <serkan@gentoo.org>
