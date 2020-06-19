@@ -177,6 +177,7 @@ public final class Main extends ClassVisitor {
             }
         });
 /*
+        // https://github.com/Obsidian-StudiosInc/java-dep-check/issues/2
         for (String dep : deps) {
             if (!jarClasses.contains(dep)) {
                 if (found) {
