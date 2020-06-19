@@ -3,3 +3,5 @@
 
 A tiny program used on Gentoo/Funtoo for QA to check if packages dependencies 
 are actually used.
+
+Version 0.4.2
